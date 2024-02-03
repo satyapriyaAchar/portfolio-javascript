@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2285a15cc8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div  id="header">
+        <div class="container">
+            <nav class="navi">
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Welcome to My Portfolio</p>
+                <h1>Hi,I'am<br/><span>Satyapriya Achar</span></h1>
+            </div>
+        </div>
+    </div>
+ <!-- ---------------about----------------- -->
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                <img src="images/user.png" alt="">
+                </div>
+                <div class="col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, dolores. Omnis eligendi quas dolorum, nobis laboriosam quidem alias eos incidunt necessitatibus dignissimos dolorem veritatis dolore! Pariatur tempore odit ducimus placeat?</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Developer</span><br>Web app develpment</li>
+                        <li><span>Programming</span><br>Competative Programming</li>
+                        <li><span>Database</span><br>Sql</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>cemk</span><br>core</li>
+                        <li><span>bbbbb</span><br>Web app develpment</li>
+                        <li><span>aaaa</span><br>Web app develpment</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-Present</span><br>College of Engineering &Management,Kolaghat</li>
+                        <li><span>2018-2020</span><br>Jawahar Navodaya Vidyalaya,Paschim Medinipur</li>
+                        <li><span>2013-2018</span><br>Jawahar Navodaya Vidyalaya,Howrah</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+</div>
+<!-- ----------------------------services----------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code" style="color: #e12114;"></i>
+                <h2>web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facere ullam id iusto enim provident corporis totam optio corrupti facilis a voluptate eum quidem dolorem quae voluptates dolores, incidunt distinctio!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop" style="color: #d24314;"></i>
+                <h2>Data Structure</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facere ullam id iusto enim provident corporis totam optio corrupti facilis a voluptate eum quidem dolorem quae voluptates dolores, incidunt distinctio!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-desktop" style="color: #c64710;"></i>
+                <h2>Gate Exam</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facere ullam id iusto enim provident corporis totam optio corrupti facilis a voluptate eum quidem dolorem quae voluptates dolores, incidunt distinctio!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------portfolio------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+           <div class="work">
+             <img src="images/IMG_20230416_174213.jpg">
+             <div class="layer">
+                <h3>Sarvepalli Radhakrishnan</h3>
+                <a href="https://drive.google.com/file/d/1UYiIJcdWZGd7K605v8eTWPIkaESXhcv2/view?usp=sharing"><i class="fa-solid fa-eye"></i></a>
+             </div>
+           </div>
+           <div class="work">
+            <img src="images/IMG_20230416_174250.jpg">
+            <div class="layer">
+                <h3>Rabindranath Tagore</h3>
+                <a href="https://drive.google.com/file/d/14iY-yFWuPmZhO9xGHwi0NUsgPXnSRbmw/view?usp=drive_link"><i class="fa-solid fa-eye"></i></a>
+             </div>
+          </div>
+          <div class="work">
+            <img src="images/kerala.avif">
+            <div class="layer">
+                <h3>Kerala Blog</h3>
+                <a href="https://infomaster2021.blogspot.com/2021/07/gods-own-country-kerala.html"><i class="fa-solid fa-eye"></i></a>
+             </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -------------------contact------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>satyapriyaachar111@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9875343733</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/satyapriya-achar-520342196/"><i class="fa-brands fa-linkedin" style="color: blue;"></i></a>
+                    <a href="https://twitter.com/SatyapriyaAchar"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://youtube.com/@living_ideal?si=HE2vIMn0sFGfagvY"><i class="fa-brands fa-youtube" style="color: #e54b24;"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp" style="color: #16ac34;"></i></a>
+                </div>
+                <a href="images/my-cv.pdf"  class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+  <div class="copyright">
+    <p>copyright <i class="fa-regular fa-copyright"></i> satyaweb</p>
+  </div>  
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks)
+        {
+           tablink.classList.remove("active-link");  //remove active class
+        }
+        for(tabcontent of tabcontents)
+        {
+           tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+     var sidemenu =document.getElementById("sidemenu");
+     function openmenu()
+     {
+        sidemenu.style.right="0";
+     }
+     function closemenu()
+     {
+        sidemenu.style.right="-200px";
+     }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwgtWV-2_cro_8ctlmqwnPPWcSyrPuafiQ3f2jJNK4FSWgVpLyQ808L1Dy6BOn3dtw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){
+              msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
