@@ -4,30 +4,49 @@
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
 }
-body{
-    background: #080808;
-    color: aliceblue;
-}
 #header{
     width: 100%;
     height: 100vh;
     /* background-color: #080808; */
-    background-image: url(images/wp2552452.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+body {
+    background: linear-gradient(300deg, #000783, #48010c, #D4F1F4);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: aliceblue;
+  }
+  
+  @keyframes body {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 .container{
     padding: 10px 10%;
    
-    
 }
 .navi{
    
-     display: flex; /* side-by-side */
+    display: flex; /* side-by-side */
     align-items:center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.navbar{
+    background-color: #f3bc77;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .logo{
@@ -41,15 +60,15 @@ nav ul li{
     
 }
 nav ul li a{
-    color: aliceblue;
+    color: darkred;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     transition: 0.5;
     position: relative;
 }
 nav ul li a:hover{
-    color: yellow;
+    color: rgb(0, 38, 255);
 }
 nav ul li a::after{
     content: '';
@@ -90,20 +109,20 @@ nav ul li a:hover::after{
 .col1{
     flex-basis: 35%;
 }
-.col1 img{
-    width: 100%;
-    border-radius: 15px; /*for round*/ 
-}
+
 .col2{
     flex-basis: 60%;
 }
 .col2 p{
-    color: aqua;
+    margin-top: 1rem;
+    color: rgb(144, 255, 214);
+    font-size: large;
 }
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color:wheat
+    color:wheat;
+    margin-bottom: 2rem;
 }
 .tab-titles{
     display: flex;
@@ -111,7 +130,8 @@ nav ul li a:hover::after{
     
 }
 .tab-titles p{
-    color:orangered
+    color:rgb(251, 182, 92);
+    font-size: 1.5rem;
 }
 .tab-links{
     margin-right: 50px;
@@ -136,10 +156,11 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    color: whitesmoke;
 }
 .tab-contents ul li span{
     color: lightgreen;
-    font-size: 14px;
+    font-size: 1.2rem;
 }
 .tab-contents{
     display: none;
@@ -147,6 +168,11 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+}
+.myphoto{
+    width: 300px;
+    padding-top: 1rem;
+    /* border-radius: 100%; */
 }
 /* ---------------------------services---------------------- */
 #services{
@@ -174,14 +200,22 @@ nav ul li a:hover::after{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
-    color: rgb(30, 1, 1);
+    color: rgb(119, 250, 255);
+    font-weight: bold;
+}
+.services-list div p{
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    
 }
 .services-list div a{
     text-decoration: none;
-    color: #fff;
-    font-size: 12px;
+    color: black;
+    font-size: 14px;
     margin-top: 10px;
     display: inline-block;
+    border: 3px solid black;
+    padding: 4px 4px;
 }
 .services-list div:hover{
     background: rgb(214, 136, 136);
