@@ -7,16 +7,17 @@
 #header{
     width: 100%;
     height: 100vh;
-    /* background-color: #080808; */
+    background-image: url("./images/background.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 body {
-    background: linear-gradient(300deg, #000783, #48010c, #D4F1F4);
+    background: linear-gradient(300deg, #e4f98f, #f693b9, #4ed1df);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
     color: aliceblue;
+    font-size: 1.3rem;
   }
   
   @keyframes body {
@@ -34,6 +35,10 @@ body {
     padding: 10px 10%;
    
 }
+.content{
+    text-align: justify;
+    font-size: 2rem;
+}
 .navi{
    
     display: flex; /* side-by-side */
@@ -42,7 +47,7 @@ body {
     flex-wrap: wrap;
 }
 .navbar{
-    background-color: #f3bc77;
+    background-color: black;
     position: sticky;
     top: 0;
     overflow: hidden;
@@ -60,7 +65,7 @@ nav ul li{
     
 }
 nav ul li a{
-    color: darkred;
+    color: rgb(255, 243, 243);
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
@@ -68,7 +73,7 @@ nav ul li a{
     position: relative;
 }
 nav ul li a:hover{
-    color: rgb(0, 38, 255);
+    color: rgb(242, 255, 60);
 }
 nav ul li a::after{
     content: '';
@@ -99,7 +104,6 @@ nav ul li a:hover::after{
 /* ------------------about--------------- */
 #about{
     padding: 80px 0;
-    color: orange;
 }
 .row{
     display: flex; /*horizontal*/
@@ -115,13 +119,13 @@ nav ul li a:hover::after{
 }
 .col2 p{
     margin-top: 1rem;
-    color: rgb(144, 255, 214);
+    color: rgb(70, 1, 1);
     font-size: large;
 }
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color:wheat;
+    color:rgb(137, 1, 1);
     margin-bottom: 2rem;
 }
 .tab-titles{
@@ -130,7 +134,7 @@ nav ul li a:hover::after{
     
 }
 .tab-titles p{
-    color:rgb(251, 182, 92);
+    color:rgb(43, 1, 103);
     font-size: 1.5rem;
 }
 .tab-links{
@@ -159,8 +163,9 @@ nav ul li a:hover::after{
     color: whitesmoke;
 }
 .tab-contents ul li span{
-    color: lightgreen;
-    font-size: 1.2rem;
+
+    color: rgb(19, 65, 19);
+    font-size: 1.5rem;
 }
 .tab-contents{
     display: none;
@@ -331,7 +336,7 @@ form input,form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #e7d9d9;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
